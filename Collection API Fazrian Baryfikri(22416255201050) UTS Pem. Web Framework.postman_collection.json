@@ -59,7 +59,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJlbWFpbCI6ImZhenJpYW5iYXJ5ZkBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNjIxMjU5NiwiZXhwIjoxNzE2MjE2MTk2fQ._OzQqgd9fQo9RpyZHMuMRXyYoQctk8VHqbRuBhT2BRg",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxNDE3NywiZXhwIjoxNzE2MjE3Nzc3fQ.zlHhftTlQfGyq_M0vUgnLYKMlHatfieskdIGEbYvcoA",
 									"type": "string"
 								}
 							]
@@ -67,16 +67,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/product",
-							"protocol": "http",
+							"raw": "https://fazrianbaryf.my.id/public/api/product",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"fazrianbaryf",
+								"my",
+								"id"
 							],
-							"port": "8000",
 							"path": [
+								"public",
 								"api",
 								"product"
 							]
@@ -97,6 +96,21 @@
 									"language": "json"
 								}
 							}
+						},
+						"url": {
+							"raw": "https://fazrianbaryf.my.id/public/api/product/1",
+							"protocol": "https",
+							"host": [
+								"fazrianbaryf",
+								"my",
+								"id"
+							],
+							"path": [
+								"public",
+								"api",
+								"product",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -104,22 +118,31 @@
 				{
 					"name": "Delete Product",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTYxMTk3MTEsImV4cCI6MTcxNjEyMzMxMX0.HHZM18d0PxaTWtthst2YSLR0Wb1rrFWnGuOf1JC5c9w",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/product/2",
-							"protocol": "http",
+							"raw": "https://fazrianbaryf.my.id/public/api/product/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"fazrianbaryf",
+								"my",
+								"id"
 							],
-							"port": "8000",
 							"path": [
+								"public",
 								"api",
 								"product",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -138,7 +161,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjAyMDkyNCwiZXhwIjoxNzE2MDI0NTI0fQ.KaJnFhXB7Pv6WpCsWFUPGVRy4NB6uF4W7reDktwOZk4",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjIxNDE3NywiZXhwIjoxNzE2MjE3Nzc3fQ.zlHhftTlQfGyq_M0vUgnLYKMlHatfieskdIGEbYvcoA",
 									"type": "string"
 								}
 							]
@@ -147,7 +170,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"tes\"\r\n}",
+							"raw": "{\r\n    \"name\" : \"Buah Manis\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -155,16 +178,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/categories",
-							"protocol": "http",
+							"raw": "https://fazrianbaryf.my.id/public/api/categories",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"fazrianbaryf",
+								"my",
+								"id"
 							],
-							"port": "8000",
 							"path": [
+								"public",
 								"api",
 								"categories"
 							]
@@ -183,7 +205,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTYxMTEwNzAsImV4cCI6MTcxNjExNDY3MH0.jVO4ItJHrBw3wq9BnCN4XFFeta9wlpWNLEAPtqXY1yw",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiRmF6cmlhbiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE2MTE1ODY3LCJleHAiOjE3MTYxMTk0Njd9.xau8m_ZRUu8M7TdmqWf5sIfcgbD8GbfkAAWmsaDTr9k",
 									"type": "string"
 								}
 							]
@@ -200,16 +222,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/categories",
-							"protocol": "http",
+							"raw": "https://fazrianbaryf.my.id/public/api/categories",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"fazrianbaryf",
+								"my",
+								"id"
 							],
-							"port": "8000",
 							"path": [
+								"public",
 								"api",
 								"categories"
 							]
@@ -242,16 +263,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/categories/1",
-							"protocol": "http",
+							"raw": "https://fazrianbaryf.my.id/public/api/categories/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"fazrianbaryf",
+								"my",
+								"id"
 							],
-							"port": "8000",
 							"path": [
+								"public",
 								"api",
 								"categories",
 								"1"
@@ -268,7 +288,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW5pc3RyYXRvciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjAyOTYxNiwiZXhwIjoxNzE2MDMzMjE2fQ.b9trjdNRApLBlQ0DZDL2DT2tYcOKglPt3VkBCZ9aHsA",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNjEyMTY1MCwiZXhwIjoxNzE2MTI1MjUwfQ.fyWR-ffNjfkxi867EXvRuG8qLV-9aQsXEO4T8_oxIN4",
 									"type": "string"
 								}
 							]
@@ -276,16 +296,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/categories/1",
-							"protocol": "http",
+							"raw": "https://fazrianbaryf.my.id/public/api/categories/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"fazrianbaryf",
+								"my",
+								"id"
 							],
-							"port": "8000",
 							"path": [
+								"public",
 								"api",
 								"categories",
 								"1"
@@ -299,8 +318,69 @@
 		{
 			"name": "Register Oauth Google 2.0",
 			"request": {
-				"method": "POST",
-				"header": []
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/userinfo.email",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://www.googleapis.com/oauth2/v3/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/auth",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "uts fazrian",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "720433553038-np2n7bbs7v7153k09of1qnv5dpvop2tl.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fazrianbaryf.my.id/public/api/auth/google/redirect",
+					"protocol": "https",
+					"host": [
+						"fazrianbaryf",
+						"my",
+						"id"
+					],
+					"path": [
+						"public",
+						"api",
+						"auth",
+						"google",
+						"redirect"
+					]
+				}
 			},
 			"response": []
 		},
@@ -308,7 +388,36 @@
 			"name": "Login User",
 			"request": {
 				"method": "POST",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin@admin.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fazrianbaryf.my.id/public/api/login",
+					"protocol": "https",
+					"host": [
+						"fazrianbaryf",
+						"my",
+						"id"
+					],
+					"path": [
+						"public",
+						"api",
+						"login"
+					]
+				}
 			},
 			"response": []
 		},
@@ -319,7 +428,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"admin\"\r\n}\r\n",
+					"raw": "{\r\n    \"name\": \"fazrian\",\r\n    \"email\": \"fazrian@gmail.com\",\r\n    \"password\": \"admin\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
